@@ -1,0 +1,215 @@
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial;}
+    
+    
+    /* estilizar as abas */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #4221d3;
+      background-color: #4221d3;
+      background-repeat: no-repeat;
+      opacity: 3,0;
+    }
+    
+    /* estilizar as abas dentro  */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      opacity: 2.0;
+    }
+    
+    .tab button:hover {
+        background-repeat: no-repeat;     
+        background-color: #7a69c7;
+    }
+    
+        .tab button.active {
+      background-repeat: no-repeat;
+      background-color: #7a69c7;
+    }
+    
+    /* estilizar as abas */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid blue;
+      background-repeat: no-repeat;
+      border-top: none;
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Primeira')">Primeira</button>
+      <button class="tablinks" onclick="openCity(event, 'Segunda')">Segunda</button>
+      <button class="tablinks" onclick="openCity(event, 'Terceira')">Terceira</button>
+      <background-repeat: no-repeat>
+
+    </div>
+    
+    <div id="Primeira" class="tabcontent">
+      <h3>Primeira geração</h3>
+      <p>O iPhone SE foi lançado em 31 de março de 2016.</p>
+      <img src="https://www.icegif.com/wp-content/uploads/2022/05/icegif-838.gif" width="900" height="400" alt="iPhone SE 1">
+
+    </div>
+    
+    <div id="Segunda" class="tabcontent">
+      <h3>Segunda geração</h3>
+      <p>O iPhone SE de segunda geração foi lançado em 15 de abril de 2020.</p> 
+      <img src="https://www.icegif.com/wp-content/uploads/2022/05/icegif-834.gif" width="900" height="400" alt="iPhone SE 2">
+  
+    </div>
+    
+    <div id="Terceira" class="tabcontent">
+      <h3>Terceira geração</h3>
+      <p>O iPhone SE de terceira geração foi lançado em 9 de março de 2022.</p>
+      <img src="https://media.tenor.com/images/6080fad600bb0a649c52433c78772ed3/tenor.gif" width="900" height="400" alt="iPhone SE 3"> 
+    </div>
+    
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+       
+    </body>
+    </html> 
+
+    <title>Blog do Gabriel</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=95294&format=png&color=000000">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>BlogAbriel</title>
+</head>
+
+<body>
+    <header>Blog do Gabriel</header>
+    <style>
+        p { 
+          background : url("data:image/jpeg;base64,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") no-repeat center center fixed;
+        }
+
+        </style>
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>Novas informações sobre o tão aclamado iPhone SE 4, de 2024!</h1>
+            <p></p>
+        </div>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8R0kysBhSzk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>Veja também</h2>
+        <div class="categoria-videos">
+            <a href="https://www.youtube.com/watch?v=8R0kysBhSzk">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAjTBx00wadeZvgk5uGGrmUd9-mTwMIwtx0g&s" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=MXAPbJAqvlU">
+                <img src="https://img.youtube.com/vi/FfLMW-4TKQ8/maxresdefault.jpg" />
+            </a>
+            <a href="https://youtu.be/embed/6O8Lczvu7Wo">
+                <img src="https://img.youtube.com/vi/6O8Lczvu7Wo/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=albZlJijr6c">
+                <img src="https://img.youtube.com/vi/albZlJijr6c/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=fAT37Gu4RUM">
+                <img src="https://img.youtube.com/vi/fAT37Gu4RUM/maxresdefault.jpg" />
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+  <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>companhia</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>precisa de ajuda?</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>nossa loja online</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>siga nossas redes sociais!</h4>
+          <div class="social_links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+
+</body>
+</html>
